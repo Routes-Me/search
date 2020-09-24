@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace SearchService.Models
 {
-    public class AppSettings
+    public class Dependencies
     {
-        public string Host { get; set; }
+        public string VehicleUrl { get; set; }
     }
 }

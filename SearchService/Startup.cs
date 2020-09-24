@@ -31,6 +31,7 @@ namespace SearchService
             services.AddControllers();
             // configure strongly typed settings objects
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            services.Configure<Dependencies>(Configuration.GetSection("Dependencies"));
             services.AddScoped<ISearchRepository, SearchRepository>();
         }
 
